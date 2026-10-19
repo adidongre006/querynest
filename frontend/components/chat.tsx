@@ -383,7 +383,7 @@ export default function Chat() {
             <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-accent text-accent-fg">
               <Search className="h-4 w-4" aria-hidden />
             </span>
-            <h1 className="text-sm font-semibold tracking-tight">Search Agent</h1>
+            <h1 className="text-sm font-semibold tracking-tight">QueryNest</h1>
           </div>
           <div className="flex items-center gap-1">
             <button type="button" onClick={newChat} className={iconBtn}>

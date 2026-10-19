@@ -11,7 +11,7 @@
 ![Next.js](https://img.shields.io/badge/Next.js-15-black)
 ![FastAPI](https://img.shields.io/badge/FastAPI-async-009688)
 
-[Quickstart](#quickstart) · [Architecture](#architecture) · [Security](#security) · [API](#api-reference) · [Deploy](#deployment) · [Beginner's guide](GUIDE.md)
+<!-- [Quickstart](#quickstart) · [Architecture](#architecture) · -->
 
 </div>
 
@@ -20,7 +20,7 @@
 ### LIVE DEMO :https://querynest-one.vercel.app/
 ----
 
-<img src="/frontend/image.png" alt="demo_pic_1">
+<img src="/frontend/image.png" alt="demo_pic_1" width="200">
 
 ----
 <!-- Add a screenshot or a 10-second GIF here: docs/demo.gif (a README with a visual converts far more visitors) -->
