@@ -1,0 +1,15 @@
+# Python 3.11+ required (uses asyncio TimeoutError semantics and anext).
+# Ranges, not exact pins: run `pip freeze > requirements.lock` after your first
+# green `pytest` and deploy from that lock for fully reproducible builds.
+fastapi>=0.115,<1
+uvicorn[standard]>=0.34,<1
+pydantic>=2.9,<3
+httpx>=0.27,<1
+python-dotenv>=1.0,<2
+langchain>=1.0,<2
+langgraph>=1.0,<2
+langchain-groq>=0.3,<2
+langchain-nimble>=0.1
+
+# tests only
+pytest>=8,<9
