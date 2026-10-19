@@ -22,9 +22,9 @@
 
 
 
-<img src="/frontend/public/weather_pic.png" alt="weather_pic" width="200">
+<img src="/frontend/public/weather_pic.png" alt="weather_pic" width="1600">
 
-<img src="/frontend/public/demo_2.png" alt="demo_pic_2" width="200">
+<img src="/frontend/public/demo_2.png" alt="demo_pic_2" width="1600">
 
 ----
 <!-- Add a screenshot or a 10-second GIF here: docs/demo.gif (a README with a visual converts far more visitors) -->
