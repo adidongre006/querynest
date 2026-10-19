@@ -7,7 +7,7 @@ const sans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const mono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Search Agent",
+  title: "QueryNest",
   description: "Ask anything. Get live web answers and real-time weather, with sources.",
 };
 
