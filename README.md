@@ -20,7 +20,11 @@
 ### LIVE DEMO :https://querynest-one.vercel.app/
 ----
 
-<img src="/frontend/image.png" alt="demo_pic_1" width="200">
+
+
+<img src="/frontend/public/weather_pic.png" alt="weather_pic" width="200">
+
+<img src="/frontend/public/demo_2.png" alt="demo_pic_2" width="200">
 
 ----
 <!-- Add a screenshot or a 10-second GIF here: docs/demo.gif (a README with a visual converts far more visitors) -->
@@ -49,40 +53,11 @@ strict input validation, layered rate limiting, cost caps, and no secrets in the
 
 ## Architecture
 
-### System overview
+### System overview :
 
-```mermaid
-flowchart LR
-    subgraph Browser
-        UI["chat.tsx<br/>state, SSE reader, composer"]
-        LS[("localStorage<br/>last 12 messages")]
-    end
-    subgraph Web["Next.js :3000"]
-        SH["Server shell<br/>layout.tsx, page.tsx"]
-        RW["Rewrite /api/* to BACKEND_URL<br/>CSP and security headers"]
-    end
-    subgraph API["FastAPI :8000"]
-        MW["Middleware<br/>request id, headers, host, CORS"]
-        CH["POST /api/chat<br/>checks and validation"]
-        ES["event_stream<br/>run slot, 60 s deadline"]
-    end
-    subgraph Agent["LangGraph agent"]
-        LLM["Groq<br/>gpt-oss-20b"]
-        GS["google_search"]
-        WT["weather_tool"]
-    end
-    NIM[("Nimble<br/>web search")]
-    OWM[("OpenWeather")]
+<img src="/frontend/public/image.png" alt="demo_pic_1" width="200">
 
-    UI <--> LS
-    UI -->|"POST /api/chat"| RW
-    SH -.->|"serves UI"| UI
-    RW --> MW --> CH --> ES --> LLM
-    LLM --> GS --> NIM
-    LLM --> WT --> OWM
-    ES ==>|"SSE stream"| UI
-```
-
+---
 The browser only ever talks to the Next.js origin. The backend URL and every API key stay on the server, and the
 backend keeps no per-user state: the browser sends the last 12 messages with each request.
 
