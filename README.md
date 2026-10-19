@@ -393,4 +393,4 @@ and keep changes small and focused.
 
 ## License
 
-[LICENCE](LICENSE)
+[LICENCE](LICENSE.md)
